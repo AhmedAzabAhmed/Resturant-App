@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="brandCell" id="gTV-IL-0wX" customClass="BrandCollectionViewCell" customModule="Restaurant_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vu5-8T-MU3">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="258"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaHut.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="IKl-w5-H45">
+                                <rect key="frame" x="87" y="20" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="E4K-LF-8Gm"/>
+                                    <constraint firstAttribute="width" constant="150" id="xx0-a0-gvJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18456" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o4-2f-BRX">
+                                <rect key="frame" x="137.5" y="200.5" width="49.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.024170271520000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Hut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBU-gW-QmJ">
+                                <rect key="frame" x="125.5" y="175" width="73" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8o4-2f-BRX" firstAttribute="centerX" secondItem="Vu5-8T-MU3" secondAttribute="centerX" id="8h1-Nk-IpL"/>
+                            <constraint firstItem="IKl-w5-H45" firstAttribute="centerX" secondItem="Vu5-8T-MU3" secondAttribute="centerX" id="ES1-Eb-YkU"/>
+                            <constraint firstItem="WBU-gW-QmJ" firstAttribute="centerX" secondItem="Vu5-8T-MU3" secondAttribute="centerX" id="Heg-eu-hgI"/>
+                            <constraint firstItem="WBU-gW-QmJ" firstAttribute="top" secondItem="IKl-w5-H45" secondAttribute="bottom" constant="5" id="TC7-0o-E3D"/>
+                            <constraint firstItem="IKl-w5-H45" firstAttribute="top" secondItem="Vu5-8T-MU3" secondAttribute="top" constant="20" id="XEE-U1-G9R"/>
+                            <constraint firstItem="8o4-2f-BRX" firstAttribute="top" secondItem="WBU-gW-QmJ" secondAttribute="bottom" constant="5" id="hYL-PC-Qhb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vu5-8T-MU3" secondAttribute="bottom" id="YG0-qe-kvQ"/>
+                <constraint firstAttribute="trailing" secondItem="Vu5-8T-MU3" secondAttribute="trailing" id="kNh-3N-e7E"/>
+                <constraint firstItem="Vu5-8T-MU3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kQ3-qU-m4e"/>
+                <constraint firstItem="Vu5-8T-MU3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tLh-S7-LQq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="324" height="258"/>
+            <point key="canvasLocation" x="336.23188405797106" y="218.30357142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PizzaHut.jpeg" width="225" height="225"/>
+    </resources>
+</document>
