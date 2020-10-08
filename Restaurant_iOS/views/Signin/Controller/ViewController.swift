@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordView: UIView!
     
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    
+    @IBOutlet weak var loginBtn: UIButton!
     
 //    @IBOutlet weak var loginScrollView: UIScrollView!
     
@@ -35,6 +40,10 @@ class ViewController: UIViewController {
         
 //        self.loginScrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height + 2000)
 
+        makePlaceHolder(text: "Email", textFeild: emailField)
+        makePlaceHolder(text: "Password", textFeild: passwordField)
+        
+        loginBtn.layer.cornerRadius = 10
 
         roundViewWithborder(myView: emailView, conerRaduis: 20)
         
@@ -44,6 +53,12 @@ class ViewController: UIViewController {
         gradientView.isOpaque = false
         gradientView.alpha = CGFloat(0.9)
         self.view.insertSubview(gradientView, at: 1)
+    }
+    
+    func makePlaceHolder(text: String, textFeild: UITextField ) {
+        
+        textFeild.attributedPlaceholder = NSAttributedString(string: text,
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
     
     func roundViewWithborder(myView: UIView, conerRaduis: CGFloat) {

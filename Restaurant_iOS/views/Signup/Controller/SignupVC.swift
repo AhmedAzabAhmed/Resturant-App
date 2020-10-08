@@ -17,11 +17,15 @@ class SignupVC: UIViewController {
     @IBOutlet weak var confirmPassView: UIView!
     
     @IBOutlet weak var phonView: UIView!
+    @IBOutlet weak var registerBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        registerBtn.layer.cornerRadius = 10
+        
         let gradientView = GradientView(frame: self.view.bounds)
         gradientView.isOpaque = false
         gradientView.alpha = CGFloat(0.9)

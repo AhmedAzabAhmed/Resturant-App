@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8VN-3R-Swe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dz6-OY-0QB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -28,7 +28,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KTt-kK-Fad">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faisel Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO5-th-6uX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resturant Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO5-th-6uX">
                                                         <rect key="frame" x="0.0" y="20.5" width="414" height="49"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
                                                         <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -236,7 +236,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="BJc-u0-EMb" id="c5l-bR-ZZP"/>
                         <outlet property="emailView" destination="Iyl-ne-Mog" id="GEW-C2-JuQ"/>
+                        <outlet property="loginBtn" destination="chq-88-a2h" id="wuo-Rw-kWY"/>
+                        <outlet property="passwordField" destination="7QU-Jx-HHc" id="nts-du-TlE"/>
                         <outlet property="passwordView" destination="W9F-5r-sIg" id="Nzu-bz-zbt"/>
                     </connections>
                 </viewController>
@@ -580,6 +583,7 @@
                         <outlet property="nameView" destination="YID-qs-03G" id="W21-xU-I58"/>
                         <outlet property="passwordView" destination="hJN-Zo-pYp" id="oji-Wu-9ta"/>
                         <outlet property="phonView" destination="Pyl-5r-lqC" id="TLz-Xc-bny"/>
+                        <outlet property="registerBtn" destination="a8u-qy-JxY" id="1cS-F7-rLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kde-Ix-tJH" sceneMemberID="firstResponder"/>
@@ -922,7 +926,7 @@ c2V0IGl0A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAf-C6-cSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5801.449275362319" y="-324.10714285714283"/>
+            <point key="canvasLocation" x="5810" y="-388"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="krz-fn-Tzl">
@@ -1260,7 +1264,7 @@ c2V0IGl0A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gL-bl-iGV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6831.884057971015" y="-324.10714285714283"/>
+            <point key="canvasLocation" x="6813" y="-388"/>
         </scene>
         <!--Branch RatingTVC-->
         <scene sceneID="mQ7-ue-AUx">
