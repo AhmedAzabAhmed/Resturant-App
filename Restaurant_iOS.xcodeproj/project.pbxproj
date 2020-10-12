@@ -34,6 +34,10 @@
 		A36623212512A0E400A22C4F /* signupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623202512A0E400A22C4F /* signupBG.png */; };
 		A36623252512A52900A22C4F /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36623242512A52900A22C4F /* SignupVC.swift */; };
 		A36623272512A83900A22C4F /* clientPic.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623262512A83900A22C4F /* clientPic.png */; };
+		A370676A2534DC0F009A5823 /* FoodCartTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067692534DC0F009A5823 /* FoodCartTV.swift */; };
+		A37067742534DD2F009A5823 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067722534DD2F009A5823 /* CartTVCell.swift */; };
+		A37067752534DD2F009A5823 /* CartTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37067732534DD2F009A5823 /* CartTVCell.xib */; };
+		A370677725351EA1009A5823 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A370677625351EA1009A5823 /* Gradient.swift */; };
 		A3734DAE252CC1730011B3EA /* MealDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3734DAD252CC1730011B3EA /* MealDetailsVC.swift */; };
 		A37547C4252B6C7300E4823F /* HeaderSearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37547C3252B6C7300E4823F /* HeaderSearchCollectionReusableView.swift */; };
 		A395D1B624FD404200706C11 /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A395D1B524FD404200706C11 /* loginBG.png */; };
@@ -97,6 +101,10 @@
 		A36623202512A0E400A22C4F /* signupBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupBG.png; sourceTree = "<group>"; };
 		A36623242512A52900A22C4F /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupVC.swift; path = Restaurant_iOS/views/Signup/Controller/SignupVC.swift; sourceTree = SOURCE_ROOT; };
 		A36623262512A83900A22C4F /* clientPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clientPic.png; sourceTree = "<group>"; };
+		A37067692534DC0F009A5823 /* FoodCartTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartTV.swift; sourceTree = "<group>"; };
+		A37067722534DD2F009A5823 /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
+		A37067732534DD2F009A5823 /* CartTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTVCell.xib; sourceTree = "<group>"; };
+		A370677625351EA1009A5823 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		A3734DAD252CC1730011B3EA /* MealDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsVC.swift; sourceTree = "<group>"; };
 		A37547C3252B6C7300E4823F /* HeaderSearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSearchCollectionReusableView.swift; sourceTree = "<group>"; };
 		A395D1B524FD404200706C11 /* loginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBG.png; sourceTree = "<group>"; };
@@ -235,6 +243,7 @@
 		4E2135D724D894AD009390C0 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A37067672534DBC3009A5823 /* Food Cart */,
 				A3734DAB252CC1290011B3EA /* mealDetails */,
 				A3F7F911252A08DC004D387F /* BranchDetails */,
 				A3F7F90E252A043B004D387F /* BrandDetails */,
@@ -351,6 +360,32 @@
 			path = BrandCell;
 			sourceTree = "<group>";
 		};
+		A37067672534DBC3009A5823 /* Food Cart */ = {
+			isa = PBXGroup;
+			children = (
+				A370676B2534DC59009A5823 /* Foot Cart Cell */,
+				A37067682534DBE1009A5823 /* Controllers */,
+			);
+			path = "Food Cart";
+			sourceTree = "<group>";
+		};
+		A37067682534DBE1009A5823 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A37067692534DC0F009A5823 /* FoodCartTV.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A370676B2534DC59009A5823 /* Foot Cart Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A37067722534DD2F009A5823 /* CartTVCell.swift */,
+				A37067732534DD2F009A5823 /* CartTVCell.xib */,
+			);
+			path = "Foot Cart Cell";
+			sourceTree = "<group>";
+		};
 		A3734DAB252CC1290011B3EA /* mealDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				A3BFDBFF24FFCA9B00C96E40 /* GradientView.swift */,
+				A370677625351EA1009A5823 /* Gradient.swift */,
 			);
 			path = GradientView;
 			sourceTree = "<group>";
@@ -622,6 +658,7 @@
 				A35FA4652519076400D6A8D2 /* PizzaHut.jpeg in Resources */,
 				A36623272512A83900A22C4F /* clientPic.png in Resources */,
 				4E2135B424D87F9F009390C0 /* LaunchScreen.storyboard in Resources */,
+				A37067752534DD2F009A5823 /* CartTVCell.xib in Resources */,
 				4E2135E424D897CB009390C0 /* en.strings in Resources */,
 				A395D1B624FD404200706C11 /* loginBG.png in Resources */,
 				4E1587AF24E0A10400D29F40 /* Cairo-Regular.ttf in Resources */,
@@ -661,16 +698,19 @@
 				A3BA5C5325168718005B9D81 /* HomeCollectionViewController.swift in Sources */,
 				A36623252512A52900A22C4F /* SignupVC.swift in Sources */,
 				A33321252519605C00414543 /* BrandCollectionViewCell.swift in Sources */,
+				A37067742534DD2F009A5823 /* CartTVCell.swift in Sources */,
 				4E2135AC24D87F9D009390C0 /* ViewController.swift in Sources */,
 				A3F7F914252A093A004D387F /* BranchDetailsVC.swift in Sources */,
 				A3F7F91A252A8AC5004D387F /* BranchRatingTVC.swift in Sources */,
 				A3F7F918252A8A89004D387F /* BranchMealsCVC.swift in Sources */,
 				4E2135A824D87F9D009390C0 /* AppDelegate.swift in Sources */,
 				A3BFDC0024FFCA9B00C96E40 /* GradientView.swift in Sources */,
+				A370676A2534DC0F009A5823 /* FoodCartTV.swift in Sources */,
 				A333211F25195D8F00414543 /* BrandDetailsVC.swift in Sources */,
 				A3BA5C562516A260005B9D81 /* HomeCollectionViewCell.swift in Sources */,
 				4E2135AA24D87F9D009390C0 /* SceneDelegate.swift in Sources */,
 				A37547C4252B6C7300E4823F /* HeaderSearchCollectionReusableView.swift in Sources */,
+				A370677725351EA1009A5823 /* Gradient.swift in Sources */,
 				A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */,
 				4E1587A124E0979300D29F40 /* Utilities.swift in Sources */,
 				A333212125195E6800414543 /* BrandDetailsVCExtension.swift in Sources */,

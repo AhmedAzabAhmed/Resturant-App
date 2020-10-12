@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8VN-3R-Swe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0o0-B2-WP4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -268,7 +268,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clientPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-oB-R2l">
-                                                        <rect key="frame" x="131" y="0.0" width="152" height="284"/>
+                                                        <rect key="frame" x="55" y="0.0" width="304" height="284"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -950,31 +950,46 @@ c2V0IGl0A
         <!--Cart-->
         <scene sceneID="tpr-YV-lwG">
             <objects>
-                <tableViewController id="zvJ-Tq-17b" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pbx-YW-vaj">
+                <tableViewController id="zvJ-Tq-17b" customClass="FoodCartTV" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pbx-YW-vaj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l6f-VE-6c7">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l6f-VE-6c7" id="DWN-PT-SyZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="kad-KN-DCb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-e1-oWk">
+                                    <rect key="frame" x="8" y="32" width="398" height="60"/>
+                                    <color key="backgroundColor" red="0.8862745098" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="mvn-M3-6dI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" title="CHECKOUT                            Subtotal 700$">
+                                        <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="1Ur-e1-oWk" firstAttribute="leading" secondItem="kad-KN-DCb" secondAttribute="leading" constant="8" id="SrP-Lo-gqW"/>
+                                <constraint firstItem="1Ur-e1-oWk" firstAttribute="top" secondItem="kad-KN-DCb" secondAttribute="top" constant="32" id="rC6-TY-IbE"/>
+                                <constraint firstAttribute="trailing" secondItem="1Ur-e1-oWk" secondAttribute="trailing" constant="8" id="wNG-56-g23"/>
+                            </constraints>
+                        </view>
                         <connections>
                             <outlet property="dataSource" destination="zvJ-Tq-17b" id="Vvv-RO-FY8"/>
                             <outlet property="delegate" destination="zvJ-Tq-17b" id="w9Z-hf-6Gx"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="KCo-bh-vDZ"/>
+                    <connections>
+                        <outlet property="footerView" destination="kad-KN-DCb" id="OTY-Tt-kGI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBR-dR-1aH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3822" y="409"/>
+            <point key="canvasLocation" x="3821.739130434783" y="408.48214285714283"/>
         </scene>
         <!--Home-->
         <scene sceneID="KKI-d5-lDA">
@@ -1646,7 +1661,7 @@ c2V0IGl0A
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="64"/>
                                                                 <color key="backgroundColor" red="0.88627450980392153" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                                <state key="normal" title="ADD TO CART  Subtotal 49$">
+                                                                <state key="normal" title="ADD TO CART                              Subtotal 49$">
                                                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
                                                             </button>
