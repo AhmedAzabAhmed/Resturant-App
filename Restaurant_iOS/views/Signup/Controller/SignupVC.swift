@@ -19,12 +19,25 @@ class SignupVC: UIViewController {
     @IBOutlet weak var phonView: UIView!
     @IBOutlet weak var registerBtn: UIButton!
     
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var confirmPassField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
         registerBtn.layer.cornerRadius = 10
+        
+        makePlaceHolder(text: "Name", textFeild: nameField)
+        makePlaceHolder(text: "Email", textFeild: emailField)
+        makePlaceHolder(text: "Password", textFeild: passwordField)
+        makePlaceHolder(text: "Confirm Password", textFeild: confirmPassField)
+        makePlaceHolder(text: "Phone", textFeild: phoneField)
         
         let gradientView = GradientView(frame: self.view.bounds)
         gradientView.isOpaque = false
@@ -38,6 +51,11 @@ class SignupVC: UIViewController {
          roundViewWithborder(myView: phonView, conerRaduis: 20)
     }
     
+    func makePlaceHolder(text: String, textFeild: UITextField ) {
+        
+        textFeild.attributedPlaceholder = NSAttributedString(string: text,
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+    }
     
     func roundViewWithborder(myView: UIView, conerRaduis: CGFloat) {
         myView.layer.borderWidth = 1

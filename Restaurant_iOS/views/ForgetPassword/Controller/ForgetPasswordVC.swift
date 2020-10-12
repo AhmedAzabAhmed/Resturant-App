@@ -11,10 +11,13 @@ import UIKit
 class ForgetPasswordVC: UIViewController {
     
     @IBOutlet weak var forgetPassView: UIView!
+    @IBOutlet weak var forgetPassField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        makePlaceHolder(text: "Email", textFeild: forgetPassField)
         
         roundViewWithborder(myView: forgetPassView, conerRaduis: 20)
         
@@ -23,6 +26,14 @@ class ForgetPasswordVC: UIViewController {
         gradientView.alpha = CGFloat(0.9)
         self.view.insertSubview(gradientView, at: 1)
     }
+    
+    
+    func makePlaceHolder(text: String, textFeild: UITextField ) {
+        
+        textFeild.attributedPlaceholder = NSAttributedString(string: text,
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+    }
+    
     
     func roundViewWithborder(myView: UIView, conerRaduis: CGFloat) {
         myView.layer.borderWidth = 1
