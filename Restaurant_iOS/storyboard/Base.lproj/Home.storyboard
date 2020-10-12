@@ -1529,31 +1529,31 @@ c2V0IGl0A
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-Rq-8Cv">
-                                                                <rect key="frame" x="16" y="0.0" width="382" height="61"/>
+                                                                <rect key="frame" x="16" y="16" width="382" height="45"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I8h-Jf-BdC">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soft Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SU-Dm-or8">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="252" translatesAutoresizingMaskIntoConstraints="NO" id="8hP-54-sBX">
-                                                                                <rect key="frame" x="0.0" y="30" width="382" height="31"/>
+                                                                                <rect key="frame" x="0.0" y="20.5" width="382" height="24.5"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juh-cf-bJD">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="31"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="24.5"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="8tP-Wl-S1r">
-                                                                                        <rect key="frame" x="323" y="0.0" width="59" height="31"/>
+                                                                                        <rect key="frame" x="323" y="0.0" width="59" height="24.5"/>
                                                                                         <subviews>
                                                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg1-PP-4dx">
-                                                                                                <rect key="frame" x="28" y="0.0" width="31" height="31"/>
+                                                                                                <rect key="frame" x="28" y="0.0" width="31" height="24.5"/>
                                                                                                 <state key="normal" backgroundImage="loc"/>
                                                                                                 <connections>
                                                                                                     <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="9MO-Z4-am5"/>
@@ -1572,7 +1572,7 @@ c2V0IGl0A
                                                         <constraints>
                                                             <constraint firstItem="4A2-Rq-8Cv" firstAttribute="leading" secondItem="tMq-Mh-jvh" secondAttribute="leading" constant="16" id="IFP-bH-hgq"/>
                                                             <constraint firstAttribute="trailing" secondItem="4A2-Rq-8Cv" secondAttribute="trailing" constant="16" id="N6g-Fe-VDD"/>
-                                                            <constraint firstItem="4A2-Rq-8Cv" firstAttribute="top" secondItem="tMq-Mh-jvh" secondAttribute="top" id="R5w-bJ-fXu"/>
+                                                            <constraint firstItem="4A2-Rq-8Cv" firstAttribute="top" secondItem="tMq-Mh-jvh" secondAttribute="top" constant="16" id="R5w-bJ-fXu"/>
                                                             <constraint firstAttribute="bottom" secondItem="4A2-Rq-8Cv" secondAttribute="bottom" id="irs-AN-es9"/>
                                                             <constraint firstAttribute="height" constant="61" id="nqM-vC-1lH"/>
                                                         </constraints>
@@ -1645,8 +1645,8 @@ c2V0IGl0A
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-f1-Ygn">
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="64"/>
                                                                 <color key="backgroundColor" red="0.88627450980392153" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="ADD TO CART                                Subtotal 49$">
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                                <state key="normal" title="ADD TO CART  Subtotal 49$">
                                                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
                                                             </button>
