@@ -13,10 +13,11 @@ private let reuseIdentifier = "homeCollectionCell"
 class HomeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     let searchController = UISearchController(searchResultsController: nil)
-    
+    let arr: [String] = ["PizzaHut.jpeg", "elbaik.gif", "KFC.jpg", "burger.jpg"]
+    let arrNames: [String] = ["PizzaHut.jpeg", "El Baik.gif", "KFC.jpg", "Retmo.jpg"]
+    let arrHotline: [String] = ["19850", "12457", "85416", "12048"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAp pear = false
         // Register cell classes
@@ -45,12 +46,15 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return arr.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
         
+        cell.restLogo.image = UIImage(named: arr[indexPath.row])
+        cell.restName.text = arrNames[indexPath.row]
+        cell.restHotline.text = arrHotline[indexPath.row]
         // Configure the cell
         
         return cell

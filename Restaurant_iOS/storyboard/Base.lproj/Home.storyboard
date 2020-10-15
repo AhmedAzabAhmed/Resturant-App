@@ -792,7 +792,7 @@ c2V0IGl0A
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA5-Gw-Nm7">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="3XF-9Y-Ugu">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3XF-9Y-Ugu">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="272" id="RjM-gw-roa"/>
@@ -1599,7 +1599,7 @@ c2V0IGl0A
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6i-ZR-FP6">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-Pt-GaE">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-Pt-GaE">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="272" id="GQ5-00-QCZ"/>
@@ -1645,7 +1645,17 @@ c2V0IGl0A
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-IL-pkJ">
                                                                                 <rect key="frame" x="0.0" y="84.5" width="216" height="37.5"/>
-                                                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rate.png" translatesAutoresizingMaskIntoConstraints="NO" id="20b-Kj-qaw">
+                                                                                        <rect key="frame" x="5" y="5" width="206" height="27.5"/>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="bottom" secondItem="20b-Kj-qaw" secondAttribute="bottom" constant="5" id="1tP-zV-fZ8"/>
+                                                                                    <constraint firstItem="20b-Kj-qaw" firstAttribute="leading" secondItem="vy1-IL-pkJ" secondAttribute="leading" constant="5" id="Bdk-dR-sRr"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="20b-Kj-qaw" secondAttribute="trailing" constant="5" id="Fwz-an-7pA"/>
+                                                                                    <constraint firstItem="20b-Kj-qaw" firstAttribute="top" secondItem="vy1-IL-pkJ" secondAttribute="top" constant="5" id="xjg-Ti-L9X"/>
+                                                                                </constraints>
                                                                             </view>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="oDa-P9-Sco">
                                                                                 <rect key="frame" x="0.0" y="127" width="216" height="37"/>
@@ -1953,7 +1963,7 @@ c2V0IGl0A
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1SJ-72-J5L">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uiF-h8-6qy">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uiF-h8-6qy">
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-Pu-ggz">
@@ -2354,7 +2364,10 @@ c2V0IGl0A
         <image name="loc" width="31" height="31"/>
         <image name="loginBG.png" width="585" height="830"/>
         <image name="nameIcon" width="20" height="24"/>
+        <image name="p1.jpg" width="300" height="300"/>
         <image name="password" width="25" height="25"/>
+        <image name="pizza.jpg" width="1050" height="700"/>
+        <image name="rate.png" width="762" height="110"/>
         <image name="rightCheck" width="24" height="24"/>
         <image name="signupBG.png" width="591" height="887"/>
     </resources>

@@ -12,6 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    let pizzas: [String] = ["p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg"]
+    let pizzkind: [String] = ["Sicilian Pizza", "Greek Pizza", "California Pizza", "Neapolitan Pizza"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -106,7 +110,7 @@ class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return pizzas.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -114,6 +118,9 @@ class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionCell", for: indexPath) as! HomeCollectionViewCell
         // Configure the cell
+        cell.restLogo.image = UIImage(named: pizzas[indexPath.row])
+        cell.restName.text = pizzkind[indexPath.row]
+        cell.restHotline.text = ""
         
         return cell
     }

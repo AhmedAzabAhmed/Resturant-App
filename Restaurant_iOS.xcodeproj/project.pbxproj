@@ -30,6 +30,15 @@
 		A33321252519605C00414543 /* BrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33321232519605C00414543 /* BrandCollectionViewCell.swift */; };
 		A33321262519605C00414543 /* BrandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33321242519605C00414543 /* BrandCollectionViewCell.xib */; };
 		A33CCEEE25387C10002D1C57 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */; };
+		A3561E0E2538E2C300FD6334 /* rate.png in Resources */ = {isa = PBXBuildFile; fileRef = A3561E0D2538E2C300FD6334 /* rate.png */; };
+		A3561E132538E65600FD6334 /* elbaik.gif in Resources */ = {isa = PBXBuildFile; fileRef = A3561E102538E65500FD6334 /* elbaik.gif */; };
+		A3561E142538E65600FD6334 /* KFC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E112538E65600FD6334 /* KFC.jpg */; };
+		A3561E1A2538EBAE00FD6334 /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E192538EBAE00FD6334 /* burger.jpg */; };
+		A3561E1C2538EFD900FD6334 /* pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E1B2538EFD800FD6334 /* pizza.jpg */; };
+		A3561E292538F76700FD6334 /* p3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E252538F76500FD6334 /* p3.jpg */; };
+		A3561E2A2538F76700FD6334 /* p4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E262538F76500FD6334 /* p4.jpg */; };
+		A3561E2B2538F76700FD6334 /* p2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E272538F76500FD6334 /* p2.jpg */; };
+		A3561E2C2538F76700FD6334 /* p1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3561E282538F76600FD6334 /* p1.jpg */; };
 		A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BA6212513BC45009F67A5 /* ForgetPasswordVC.swift */; };
 		A35FA4652519076400D6A8D2 /* PizzaHut.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A35FA4642519076300D6A8D2 /* PizzaHut.jpeg */; };
 		A36623212512A0E400A22C4F /* signupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623202512A0E400A22C4F /* signupBG.png */; };
@@ -102,6 +111,15 @@
 		A333212025195E6800414543 /* BrandDetailsVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrandDetailsVCExtension.swift; path = Restaurant_iOS/views/Home/controllers/BrandDetailsVCExtension.swift; sourceTree = SOURCE_ROOT; };
 		A33321232519605C00414543 /* BrandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCollectionViewCell.swift; sourceTree = "<group>"; };
 		A33321242519605C00414543 /* BrandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandCollectionViewCell.xib; sourceTree = "<group>"; };
+		A3561E0D2538E2C300FD6334 /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rate.png; sourceTree = "<group>"; };
+		A3561E102538E65500FD6334 /* elbaik.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = elbaik.gif; sourceTree = "<group>"; };
+		A3561E112538E65600FD6334 /* KFC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KFC.jpg; sourceTree = "<group>"; };
+		A3561E192538EBAE00FD6334 /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burger.jpg; sourceTree = "<group>"; };
+		A3561E1B2538EFD800FD6334 /* pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizza.jpg; sourceTree = "<group>"; };
+		A3561E252538F76500FD6334 /* p3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p3.jpg; sourceTree = "<group>"; };
+		A3561E262538F76500FD6334 /* p4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p4.jpg; sourceTree = "<group>"; };
+		A3561E272538F76500FD6334 /* p2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p2.jpg; sourceTree = "<group>"; };
+		A3561E282538F76600FD6334 /* p1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p1.jpg; sourceTree = "<group>"; };
 		A35BA6212513BC45009F67A5 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgetPasswordVC.swift; path = Restaurant_iOS/views/ForgetPassword/Controller/ForgetPasswordVC.swift; sourceTree = SOURCE_ROOT; };
 		A35FA4642519076300D6A8D2 /* PizzaHut.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PizzaHut.jpeg; sourceTree = "<group>"; };
 		A36623202512A0E400A22C4F /* signupBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupBG.png; sourceTree = "<group>"; };
@@ -446,6 +464,15 @@
 				A395D1B524FD404200706C11 /* loginBG.png */,
 				A36623202512A0E400A22C4F /* signupBG.png */,
 				A36623262512A83900A22C4F /* clientPic.png */,
+				A3561E0D2538E2C300FD6334 /* rate.png */,
+				A3561E102538E65500FD6334 /* elbaik.gif */,
+				A3561E112538E65600FD6334 /* KFC.jpg */,
+				A3561E192538EBAE00FD6334 /* burger.jpg */,
+				A3561E1B2538EFD800FD6334 /* pizza.jpg */,
+				A3561E282538F76600FD6334 /* p1.jpg */,
+				A3561E272538F76500FD6334 /* p2.jpg */,
+				A3561E252538F76500FD6334 /* p3.jpg */,
+				A3561E262538F76500FD6334 /* p4.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -742,22 +769,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3561E292538F76700FD6334 /* p3.jpg in Resources */,
 				4E2135E624D897DC009390C0 /* ar.strings in Resources */,
 				A3FB014025375A1000DD13C5 /* DeliveryCell.xib in Resources */,
 				4E1587B024E0A10400D29F40 /* Cairo-SemiBold.ttf in Resources */,
 				4E1587AB24E0A10400D29F40 /* Cairo-Black.ttf in Resources */,
 				A35FA4652519076400D6A8D2 /* PizzaHut.jpeg in Resources */,
+				A3561E1C2538EFD900FD6334 /* pizza.jpg in Resources */,
 				A36623272512A83900A22C4F /* clientPic.png in Resources */,
 				4E2135B424D87F9F009390C0 /* LaunchScreen.storyboard in Resources */,
 				A37067752534DD2F009A5823 /* CartTVCell.xib in Resources */,
 				4E2135E424D897CB009390C0 /* en.strings in Resources */,
 				A395D1B624FD404200706C11 /* loginBG.png in Resources */,
+				A3561E2C2538F76700FD6334 /* p1.jpg in Resources */,
 				4E1587AF24E0A10400D29F40 /* Cairo-Regular.ttf in Resources */,
 				4E1587B124E0A10400D29F40 /* OFL.txt in Resources */,
 				A33321262519605C00414543 /* BrandCollectionViewCell.xib in Resources */,
 				4E2135B124D87F9F009390C0 /* Assets.xcassets in Resources */,
+				A3561E0E2538E2C300FD6334 /* rate.png in Resources */,
 				4E2135AF24D87F9D009390C0 /* Home.storyboard in Resources */,
+				A3561E2A2538F76700FD6334 /* p4.jpg in Resources */,
+				A3561E1A2538EBAE00FD6334 /* burger.jpg in Resources */,
 				A3BA5C572516A260005B9D81 /* HomeCollectionViewCell.xib in Resources */,
+				A3561E142538E65600FD6334 /* KFC.jpg in Resources */,
+				A3561E132538E65600FD6334 /* elbaik.gif in Resources */,
+				A3561E2B2538F76700FD6334 /* p2.jpg in Resources */,
 				4E1587AC24E0A10400D29F40 /* Cairo-Bold.ttf in Resources */,
 				4E1587AE24E0A10400D29F40 /* Cairo-Light.ttf in Resources */,
 				A36623212512A0E400A22C4F /* signupBG.png in Resources */,

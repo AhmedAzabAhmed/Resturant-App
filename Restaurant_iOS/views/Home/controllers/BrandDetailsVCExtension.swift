@@ -11,14 +11,18 @@ import UIKit
 
 extension BrandDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let pizzaLocations: [String] = ["Cairo", "Nasr City", "6 October", "Alexandria"]
+        let arrHotline: [String] = ["19850", "12457", "85416", "12048"]
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandCell", for: indexPath) as! BrandCollectionViewCell
+        cell.brandLoc.text = pizzaLocations[indexPath.row]
+        cell.brandHotline.text = arrHotline[indexPath.row]
         
         // Configure the cell
         

@@ -10,6 +10,12 @@ import UIKit
 
 class BrandCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var brandImg: UIImageView!
+    
+    @IBOutlet weak var brandLoc: UILabel!
+    
+    @IBOutlet weak var brandHotline: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

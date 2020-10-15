@@ -59,6 +59,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="324" height="258"/>
+            <connections>
+                <outlet property="brandHotline" destination="8o4-2f-BRX" id="h6d-55-vLE"/>
+                <outlet property="brandImg" destination="IKl-w5-H45" id="gbW-Vh-Y5n"/>
+                <outlet property="brandLoc" destination="WBU-gW-QmJ" id="9jA-Su-8JL"/>
+            </connections>
             <point key="canvasLocation" x="336.23188405797106" y="218.30357142857142"/>
         </collectionViewCell>
     </objects>

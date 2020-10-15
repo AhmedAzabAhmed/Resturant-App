@@ -12,11 +12,17 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellBGView: UIView!
     
+    @IBOutlet weak var restLogo: UIImageView!
+    
+    @IBOutlet weak var restName: UILabel!
+    @IBOutlet weak var restHotline: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         prepareCollectionCellView()
+        restLogo.layer.cornerRadius = 20
     }
     
     func prepareCollectionCellView() {

@@ -61,6 +61,9 @@
             <size key="customSize" width="275" height="374"/>
             <connections>
                 <outlet property="cellBGView" destination="kWb-YX-Hoy" id="hqc-qb-QW9"/>
+                <outlet property="restHotline" destination="mgc-D8-mdm" id="dJk-kC-fL6"/>
+                <outlet property="restLogo" destination="WQc-Gn-KMr" id="q2J-W0-8cZ"/>
+                <outlet property="restName" destination="Hh8-ga-LLc" id="f0e-DT-8eD"/>
             </connections>
             <point key="canvasLocation" x="300.72463768115944" y="250.44642857142856"/>
         </collectionViewCell>

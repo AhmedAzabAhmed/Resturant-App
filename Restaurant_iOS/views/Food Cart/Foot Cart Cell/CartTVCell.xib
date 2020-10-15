@@ -28,7 +28,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Co-el-Kk4">
                                                 <rect key="frame" x="0.0" y="0.0" width="92.5" height="109"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaHut.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-Mn-TEJ">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-Mn-TEJ">
                                                         <rect key="frame" x="-4" y="4.5" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="SIl-Ff-vqh"/>
@@ -48,7 +48,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QwW-DL-k4d">
                                                         <rect key="frame" x="0.0" y="0.0" width="184.5" height="54.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grilled salmon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sy-Go-tyh">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SiCilian Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sy-Go-tyh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="123.5" height="54.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -59,6 +59,7 @@
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Stf-EY-zRg">
                                                                         <rect key="frame" x="21.5" y="-1" width="19.5" height="55"/>
+                                                                        <color key="tintColor" red="0.16862745098039217" green="0.19215686274509805" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
@@ -81,9 +82,10 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-x3-6da">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="36.5"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="-"/>
                                                                     </button>
-                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-eh-azK">
+                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-eh-azK">
                                                                         <rect key="frame" x="35" y="0.0" width="90" height="36.5"/>
                                                                         <color key="backgroundColor" red="0.99215686274509807" green="0.24705882352941178" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,6 +94,7 @@
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNa-5b-0qg">
                                                                         <rect key="frame" x="130" y="0.0" width="30" height="36.5"/>
+                                                                        <color key="tintColor" red="0.99215686274509807" green="0.24705882352941178" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="+"/>
                                                                     </button>
                                                                 </subviews>
@@ -148,7 +151,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="PizzaHut.jpeg" width="225" height="225"/>
+        <image name="p1.jpg" width="300" height="300"/>
         <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
 </document>
