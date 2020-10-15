@@ -34,6 +34,8 @@
 		A36623212512A0E400A22C4F /* signupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623202512A0E400A22C4F /* signupBG.png */; };
 		A36623252512A52900A22C4F /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36623242512A52900A22C4F /* SignupVC.swift */; };
 		A36623272512A83900A22C4F /* clientPic.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623262512A83900A22C4F /* clientPic.png */; };
+		A36A9E9E2537A99C0029A46B /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9D2537A99C0029A46B /* PaymentVC.swift */; };
+		A36A9EA02537B95A0029A46B /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */; };
 		A370676A2534DC0F009A5823 /* FoodCartTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067692534DC0F009A5823 /* FoodCartTV.swift */; };
 		A37067742534DD2F009A5823 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067722534DD2F009A5823 /* CartTVCell.swift */; };
 		A37067752534DD2F009A5823 /* CartTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37067732534DD2F009A5823 /* CartTVCell.xib */; };
@@ -48,6 +50,10 @@
 		A3F7F914252A093A004D387F /* BranchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F913252A093A004D387F /* BranchDetailsVC.swift */; };
 		A3F7F918252A8A89004D387F /* BranchMealsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F917252A8A89004D387F /* BranchMealsCVC.swift */; };
 		A3F7F91A252A8AC5004D387F /* BranchRatingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F919252A8AC5004D387F /* BranchRatingTVC.swift */; };
+		A3FB013B2537521E00DD13C5 /* DeliveryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB013A2537521E00DD13C5 /* DeliveryTVC.swift */; };
+		A3FB013F25375A1000DD13C5 /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB013D25375A1000DD13C5 /* DeliveryCell.swift */; };
+		A3FB014025375A1000DD13C5 /* DeliveryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FB013E25375A1000DD13C5 /* DeliveryCell.xib */; };
+		A3FB01442537738E00DD13C5 /* AdressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB01432537738E00DD13C5 /* AdressVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,8 @@
 		A36623202512A0E400A22C4F /* signupBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupBG.png; sourceTree = "<group>"; };
 		A36623242512A52900A22C4F /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupVC.swift; path = Restaurant_iOS/views/Signup/Controller/SignupVC.swift; sourceTree = SOURCE_ROOT; };
 		A36623262512A83900A22C4F /* clientPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clientPic.png; sourceTree = "<group>"; };
+		A36A9E9D2537A99C0029A46B /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		A37067692534DC0F009A5823 /* FoodCartTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartTV.swift; sourceTree = "<group>"; };
 		A37067722534DD2F009A5823 /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
 		A37067732534DD2F009A5823 /* CartTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTVCell.xib; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 		A3F7F913252A093A004D387F /* BranchDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchDetailsVC.swift; sourceTree = "<group>"; };
 		A3F7F917252A8A89004D387F /* BranchMealsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchMealsCVC.swift; sourceTree = "<group>"; };
 		A3F7F919252A8AC5004D387F /* BranchRatingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchRatingTVC.swift; sourceTree = "<group>"; };
+		A3FB013A2537521E00DD13C5 /* DeliveryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTVC.swift; sourceTree = "<group>"; };
+		A3FB013D25375A1000DD13C5 /* DeliveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCell.swift; sourceTree = "<group>"; };
+		A3FB013E25375A1000DD13C5 /* DeliveryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryCell.xib; sourceTree = "<group>"; };
+		A3FB01432537738E00DD13C5 /* AdressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +255,7 @@
 		4E2135D724D894AD009390C0 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A3FB0134253750EF00DD13C5 /* Checkout */,
 				A37067672534DBC3009A5823 /* Food Cart */,
 				A3734DAB252CC1290011B3EA /* mealDetails */,
 				A3F7F911252A08DC004D387F /* BranchDetails */,
@@ -358,6 +371,22 @@
 				A33321242519605C00414543 /* BrandCollectionViewCell.xib */,
 			);
 			path = BrandCell;
+			sourceTree = "<group>";
+		};
+		A36A9E9B2537A96B0029A46B /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				A36A9E9C2537A9770029A46B /* Controllers */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		A36A9E9C2537A9770029A46B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A36A9E9D2537A99C0029A46B /* PaymentVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A37067672534DBC3009A5823 /* Food Cart */ = {
@@ -548,6 +577,67 @@
 			path = rating;
 			sourceTree = "<group>";
 		};
+		A3FB0134253750EF00DD13C5 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A36A9E9B2537A96B0029A46B /* Payment */,
+				A3FB01412537736000DD13C5 /* Address */,
+				A3FB0138253751BF00DD13C5 /* Delivery */,
+				A3FB01352537512000DD13C5 /* Controllers */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		A3FB01352537512000DD13C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3FB0138253751BF00DD13C5 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB013C253759E200DD13C5 /* Delivery Cell */,
+				A3FB0139253751EE00DD13C5 /* Controllers */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		A3FB0139253751EE00DD13C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB013A2537521E00DD13C5 /* DeliveryTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3FB013C253759E200DD13C5 /* Delivery Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB013D25375A1000DD13C5 /* DeliveryCell.swift */,
+				A3FB013E25375A1000DD13C5 /* DeliveryCell.xib */,
+			);
+			path = "Delivery Cell";
+			sourceTree = "<group>";
+		};
+		A3FB01412537736000DD13C5 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB01422537736D00DD13C5 /* Controllers */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		A3FB01422537736D00DD13C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB01432537738E00DD13C5 /* AdressVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -653,6 +743,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2135E624D897DC009390C0 /* ar.strings in Resources */,
+				A3FB014025375A1000DD13C5 /* DeliveryCell.xib in Resources */,
 				4E1587B024E0A10400D29F40 /* Cairo-SemiBold.ttf in Resources */,
 				4E1587AB24E0A10400D29F40 /* Cairo-Black.ttf in Resources */,
 				A35FA4652519076400D6A8D2 /* PizzaHut.jpeg in Resources */,
@@ -702,10 +793,12 @@
 				4E2135AC24D87F9D009390C0 /* ViewController.swift in Sources */,
 				A3F7F914252A093A004D387F /* BranchDetailsVC.swift in Sources */,
 				A3F7F91A252A8AC5004D387F /* BranchRatingTVC.swift in Sources */,
+				A36A9E9E2537A99C0029A46B /* PaymentVC.swift in Sources */,
 				A3F7F918252A8A89004D387F /* BranchMealsCVC.swift in Sources */,
 				4E2135A824D87F9D009390C0 /* AppDelegate.swift in Sources */,
 				A3BFDC0024FFCA9B00C96E40 /* GradientView.swift in Sources */,
 				A370676A2534DC0F009A5823 /* FoodCartTV.swift in Sources */,
+				A3FB01442537738E00DD13C5 /* AdressVC.swift in Sources */,
 				A333211F25195D8F00414543 /* BrandDetailsVC.swift in Sources */,
 				A3BA5C562516A260005B9D81 /* HomeCollectionViewCell.swift in Sources */,
 				4E2135AA24D87F9D009390C0 /* SceneDelegate.swift in Sources */,
@@ -713,8 +806,11 @@
 				A370677725351EA1009A5823 /* Gradient.swift in Sources */,
 				A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */,
 				4E1587A124E0979300D29F40 /* Utilities.swift in Sources */,
+				A3FB013B2537521E00DD13C5 /* DeliveryTVC.swift in Sources */,
+				A36A9EA02537B95A0029A46B /* CheckoutVC.swift in Sources */,
 				A333212125195E6800414543 /* BrandDetailsVCExtension.swift in Sources */,
 				A3734DAE252CC1730011B3EA /* MealDetailsVC.swift in Sources */,
+				A3FB013F25375A1000DD13C5 /* DeliveryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
