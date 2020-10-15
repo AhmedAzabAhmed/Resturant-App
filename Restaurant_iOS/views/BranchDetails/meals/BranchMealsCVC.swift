@@ -17,6 +17,8 @@ class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLa
 
         
         addGradientColor()
+        
+        self.collectionView!.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "homeCollectionCell")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -25,6 +27,26 @@ class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         // Do any additional setup after loading the view.
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //mealDetail
+        let mealDetails = self.storyboard?.instantiateViewController(withIdentifier: "mealDetail") as? MealDetailsVC
+               navigationController?.pushViewController(mealDetails!, animated: true)
+               
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           
+           let viewHeight = view.frame.size.height
+           let viewWidth = view.frame.size.width
+           
+           if view.frame.size.width > view.frame.size.height {
+               return CGSize(width: (viewWidth * 0.25) - 10, height: (viewWidth * 0.29) - 10)
+           }
+           else {
+               return CGSize(width: (viewWidth * 0.5) - 10, height: (viewHeight * 0.29) - 10)
+           }
+       }
     
     override func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         
@@ -84,12 +106,13 @@ class BranchMealsCVC: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 5
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionCell", for: indexPath) as! HomeCollectionViewCell
         // Configure the cell
         
         return cell
