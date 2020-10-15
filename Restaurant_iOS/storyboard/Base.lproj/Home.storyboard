@@ -277,7 +277,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clientPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-oB-R2l">
-                                                        <rect key="frame" x="131" y="0.0" width="152" height="138"/>
+                                                        <rect key="frame" x="55" y="0.0" width="304" height="138"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -1029,24 +1029,24 @@ c2V0IGl0A
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TRP-oo-8Wn">
-                                                        <rect key="frame" x="50" y="125" width="314" height="72"/>
+                                                        <rect key="frame" x="50" y="53" width="314" height="144"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xa-ge-kxJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="72"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="144"/>
                                                                 <state key="normal" image="checkedDelivery"/>
                                                                 <connections>
                                                                     <action selector="swapBetweenViews:" destination="Rtr-sM-mFR" eventType="touchUpInside" id="U7Y-h9-Y47"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2l-98-jbK">
-                                                                <rect key="frame" x="111.5" y="0.0" width="91" height="72"/>
+                                                                <rect key="frame" x="111.5" y="0.0" width="91" height="144"/>
                                                                 <state key="normal" image="Address"/>
                                                                 <connections>
                                                                     <action selector="swapBetweenViews:" destination="Rtr-sM-mFR" eventType="touchUpInside" id="DiN-ei-SiH"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAb-Q3-nph">
-                                                                <rect key="frame" x="222.5" y="0.5" width="91.5" height="71"/>
+                                                                <rect key="frame" x="222.5" y="1" width="91.5" height="142"/>
                                                                 <state key="normal" image="Payment"/>
                                                                 <connections>
                                                                     <action selector="swapBetweenViews:" destination="Rtr-sM-mFR" eventType="touchUpInside" id="eOk-hx-ocb"/>
@@ -1462,10 +1462,10 @@ c2V0IGl0A
                                                                         <rect key="frame" x="304.5" y="0.0" width="45.5" height="60"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-Bo-L18">
-                                                                                <rect key="frame" x="3.5" y="0.0" width="42" height="60"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="60"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterCard" translatesAutoresizingMaskIntoConstraints="NO" id="mnf-z9-WE1">
-                                                                                        <rect key="frame" x="0.0" y="30" width="42" height="30"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="60"/>
                                                                                     </imageView>
                                                                                 </subviews>
                                                                             </stackView>
@@ -2098,9 +2098,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fjE-Ai-hSc">
                                                                         <rect key="frame" x="0.0" y="0.0" width="93" height="33.5"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7o-0M-47K">
+                                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7o-0M-47K">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="33.5"/>
                                                                                 <state key="normal" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="Ij6-us-Ydo"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-ub-zXS">
                                                                                 <rect key="frame" x="34" y="0.0" width="59" height="33.5"/>
@@ -2113,9 +2116,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-bJ-gbB">
                                                                         <rect key="frame" x="0.0" y="49.5" width="76.5" height="33"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-0L-e6O">
+                                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-0L-e6O">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="33"/>
-                                                                                <state key="normal" image="checkedRadioButton"/>
+                                                                                <state key="normal" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="HlL-Ra-kup"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spicy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-LE-R2h">
                                                                                 <rect key="frame" x="34" y="0.0" width="42.5" height="33"/>
@@ -2203,9 +2209,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-x0-zRl">
                                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="45.5"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-hp-Yvb">
+                                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-hp-Yvb">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="28.5" height="45.5"/>
-                                                                                <state key="normal" image="checkedRadioButton"/>
+                                                                                <state key="normal" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="Qg1-5e-ZbU"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pepsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUK-t2-k6p">
                                                                                 <rect key="frame" x="38.5" y="0.0" width="343.5" height="45.5"/>
@@ -2221,9 +2230,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcE-JC-b5m">
                                                                         <rect key="frame" x="0.0" y="45.5" width="382" height="45.5"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avh-Wv-e3D">
+                                                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avh-Wv-e3D">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="29.5" height="45.5"/>
                                                                                 <state key="normal" title="Button" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="dCo-GD-icj"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mirinda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P9-0b-J5o">
                                                                                 <rect key="frame" x="29.5" y="0.0" width="352.5" height="45.5"/>
@@ -2239,9 +2251,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-vd-8xA">
                                                                         <rect key="frame" x="0.0" y="91" width="382" height="45.5"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-nD-WFV">
+                                                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-nD-WFV">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="29.5" height="45.5"/>
                                                                                 <state key="normal" title="Button" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="7qY-YD-R4m"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcG-Wq-jGa">
                                                                                 <rect key="frame" x="29.5" y="0.0" width="352.5" height="45.5"/>
@@ -2257,9 +2272,12 @@ c2V0IGl0A
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWf-TJ-nkC">
                                                                         <rect key="frame" x="0.0" y="136.5" width="382" height="45.5"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8W-9Z-aCg">
+                                                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8W-9Z-aCg">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="29.5" height="45.5"/>
                                                                                 <state key="normal" title="Button" image="RadioButton"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="G4Q-EY-bw3"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Up Diet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiC-JY-fts">
                                                                                 <rect key="frame" x="29.5" y="0.0" width="352.5" height="45.5"/>
@@ -2331,8 +2349,14 @@ c2V0IGl0A
                         <viewLayoutGuide key="safeArea" id="2aw-ac-pH2"/>
                     </view>
                     <connections>
+                        <outlet property="mirindaBtn" destination="Avh-Wv-e3D" id="91l-MC-8ef"/>
+                        <outlet property="originalBtn" destination="g7o-0M-47K" id="SPH-1O-ifD"/>
+                        <outlet property="pepsiBtn" destination="Hgb-hp-Yvb" id="brA-Bt-4md"/>
                         <outlet property="softDrinkHeightConstraint" destination="1KL-jy-hNu" id="Enc-Do-ArD"/>
+                        <outlet property="spicyBtn" destination="Cok-0L-e6O" id="nxT-xK-OnZ"/>
                         <outlet property="twisterHeightConstraint" destination="pfE-FG-tBz" id="DMG-GZ-EiC"/>
+                        <outlet property="up7Btn" destination="SWX-nD-WFV" id="Cmi-ga-hdI"/>
+                        <outlet property="up7Diet" destination="P8W-9Z-aCg" id="LEW-kh-2UO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpJ-dN-H2z" sceneMemberID="firstResponder"/>
@@ -2367,7 +2391,6 @@ c2V0IGl0A
         <image name="RadioButton" width="24" height="24"/>
         <image name="cart.fill" catalog="system" width="64" height="50"/>
         <image name="checkedDelivery" width="53" height="72"/>
-        <image name="checkedRadioButton" width="24" height="24"/>
         <image name="clientPic.png" width="152" height="155"/>
         <image name="email_icon" width="25" height="19"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>

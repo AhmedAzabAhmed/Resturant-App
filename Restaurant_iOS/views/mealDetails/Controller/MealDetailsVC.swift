@@ -15,6 +15,15 @@ class MealDetailsVC: UIViewController {
     
     @IBOutlet weak var softDrinkHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var originalBtn: UIButton!
+    @IBOutlet weak var spicyBtn: UIButton!
+    
+    @IBOutlet weak var pepsiBtn: UIButton!
+    @IBOutlet weak var mirindaBtn: UIButton!
+    @IBOutlet weak var up7Btn: UIButton!
+    @IBOutlet weak var up7Diet: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +58,42 @@ class MealDetailsVC: UIViewController {
             UIView.animate(withDuration: 0.5) {
                 self.view.layoutIfNeeded()
             }
+            break
+            
+            case 11:
+                originalBtn.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+                spicyBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+            break
+            
+            case 12:
+                
+                originalBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                spicyBtn.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+                
+            break
+             case 13:
+                pepsiBtn.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+                mirindaBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Btn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Diet.setImage(UIImage(named: "RadioButton"), for: .normal)
+            break
+             case 14:
+                pepsiBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                mirindaBtn.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+                up7Btn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Diet.setImage(UIImage(named: "RadioButton"), for: .normal)
+            break
+             case 15:
+                pepsiBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                mirindaBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Btn.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+                up7Diet.setImage(UIImage(named: "RadioButton"), for: .normal)
+            break
+             case 16:
+                pepsiBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                mirindaBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Btn.setImage(UIImage(named: "RadioButton"), for: .normal)
+                up7Diet.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
             break
         default:
             print("Not available")
