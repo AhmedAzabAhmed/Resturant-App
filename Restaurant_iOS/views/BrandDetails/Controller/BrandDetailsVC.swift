@@ -19,10 +19,18 @@ class BrandDetailsVC: UIViewController {
     
     @IBOutlet weak var brandHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var loginImg: UIImageView!
+    
+    
     var reached : Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        loginImg.clipsToBounds = true
+        loginImg.layer.cornerRadius = 20
+        loginImg.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
         // Do any additional setup after loading the view.
 //        addGradientColor()

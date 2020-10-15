@@ -55,6 +55,12 @@ class ViewController: UIViewController {
         self.view.insertSubview(gradientView, at: 1)
     }
     
+    @IBAction func goToHome(_ sender: Any) {
+        
+        let signup = self.storyboard?.instantiateViewController(withIdentifier: "signup") as? SignupVC
+        navigationController?.pushViewController(signup!, animated: true)
+    }
+    
     func makePlaceHolder(text: String, textFeild: UITextField ) {
         
         textFeild.attributedPlaceholder = NSAttributedString(string: text,

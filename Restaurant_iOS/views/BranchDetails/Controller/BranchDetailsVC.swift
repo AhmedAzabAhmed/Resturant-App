@@ -19,11 +19,18 @@ class BranchDetailsVC: UIViewController {
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var ratingBtn: UIButton!
     
+    @IBOutlet weak var BGImg: UIImageView!
+    
+    
     var branchMeals: BranchMealsCVC?
     var branchRating: BranchRatingTVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        BGImg.clipsToBounds = true
+        BGImg.layer.cornerRadius = 20
+        BGImg.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
         branchMeals = self.storyboard?.instantiateViewController(withIdentifier: "meals") as? BranchMealsCVC
         

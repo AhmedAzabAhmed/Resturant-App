@@ -927,6 +927,7 @@ c2V0IGl0A
                         <outlet property="brandCollectionView" destination="pMU-WV-xM8" id="4Uy-Bu-CDO"/>
                         <outlet property="brandHeightConstraint" destination="5Z0-Q3-YWj" id="geE-lw-i08"/>
                         <outlet property="brandView" destination="hAX-81-QtT" id="YvX-pz-8ha"/>
+                        <outlet property="loginImg" destination="3XF-9Y-Ugu" id="M5c-lN-BWA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAf-C6-cSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2036,7 +2037,7 @@ c2V0IGl0A
                                                                                         <rect key="frame" x="323" y="0.0" width="59" height="25"/>
                                                                                         <subviews>
                                                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXM-KU-39W">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="25"/>
+                                                                                                <rect key="frame" x="28" y="0.0" width="31" height="25"/>
                                                                                                 <state key="normal" backgroundImage="loc"/>
                                                                                                 <connections>
                                                                                                     <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="ioq-Oh-rnH"/>
@@ -2070,14 +2071,14 @@ c2V0IGl0A
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="82.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fjE-Ai-hSc">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="117" height="33.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="33.5"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7o-0M-47K">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="33.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="33.5"/>
                                                                                 <state key="normal" image="RadioButton"/>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-ub-zXS">
-                                                                                <rect key="frame" x="58" y="0.0" width="59" height="33.5"/>
+                                                                                <rect key="frame" x="34" y="0.0" width="59" height="33.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2085,14 +2086,14 @@ c2V0IGl0A
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-bJ-gbB">
-                                                                        <rect key="frame" x="0.0" y="49.5" width="100.5" height="33"/>
+                                                                        <rect key="frame" x="0.0" y="49.5" width="76.5" height="33"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-0L-e6O">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="33"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="33"/>
                                                                                 <state key="normal" image="checkedRadioButton"/>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spicy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-LE-R2h">
-                                                                                <rect key="frame" x="58" y="0.0" width="42.5" height="33"/>
+                                                                                <rect key="frame" x="34" y="0.0" width="42.5" height="33"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2144,7 +2145,7 @@ c2V0IGl0A
                                                                                         <rect key="frame" x="323" y="0.0" width="59" height="24.5"/>
                                                                                         <subviews>
                                                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg1-PP-4dx">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="24.5"/>
+                                                                                                <rect key="frame" x="28" y="0.0" width="31" height="24.5"/>
                                                                                                 <state key="normal" backgroundImage="loc"/>
                                                                                                 <connections>
                                                                                                     <action selector="showHideBtn:" destination="8VN-3R-Swe" eventType="touchUpInside" id="9MO-Z4-am5"/>
