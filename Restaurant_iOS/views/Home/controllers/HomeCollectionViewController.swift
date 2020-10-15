@@ -36,6 +36,12 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let branches = self.storyboard?.instantiateViewController(withIdentifier: "branches") as? BrandDetailsVC
+        navigationController?.pushViewController(branches!, animated: true)
+        
+    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items

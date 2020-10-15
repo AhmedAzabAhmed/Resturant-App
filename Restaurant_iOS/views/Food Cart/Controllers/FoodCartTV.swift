@@ -21,6 +21,13 @@ class FoodCartTV: UITableViewController {
 
     }
     
+    @IBAction func checkout(_ sender: Any) {
+        
+        let checkout = self.storyboard?.instantiateViewController(withIdentifier: "checkout") as? CheckoutVC
+        navigationController?.pushViewController(checkout!, animated: true)
+    }
+    
+    
 //    // MARK: addGradientColorToCollectionView
 //    func addGradientColor() {
 //

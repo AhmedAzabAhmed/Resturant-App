@@ -79,7 +79,7 @@ class BrandDetailsVC: UIViewController {
             reached = false
             print("Done!")
             
-            brandHeightConstraint.constant += 237.50000000000003
+//            brandHeightConstraint.constant += 237.50000000000003
             
             UIView.animate(withDuration: 2.0) { //1
                 self.addGradientColor()
@@ -88,6 +88,8 @@ class BrandDetailsVC: UIViewController {
         } else if !reached && (scrollView.contentOffset.y <= (scrollView.contentSize.height - scrollView.frame.size.height)) {
             reached = true
         }
+        
+        
         
 //        if (scrollView.contentOffset.y < 0){
 //            //reach top

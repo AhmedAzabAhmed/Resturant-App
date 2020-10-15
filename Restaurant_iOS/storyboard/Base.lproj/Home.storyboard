@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rtr-sM-mFR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0o0-B2-WP4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -778,7 +778,7 @@ c2V0IGl0A
         <!--Brand DetailsVC-->
         <scene sceneID="mbg-Z9-ZLk">
             <objects>
-                <viewController id="zbs-qS-inz" customClass="BrandDetailsVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="branches" id="zbs-qS-inz" customClass="BrandDetailsVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vh5-zU-OrU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -946,14 +946,14 @@ c2V0IGl0A
                     </tabBar>
                     <connections>
                         <segue destination="agb-wu-fq3" kind="relationship" relationship="viewControllers" id="QGy-J9-qfD"/>
-                        <segue destination="zvJ-Tq-17b" kind="relationship" relationship="viewControllers" id="go6-h3-agk"/>
+                        <segue destination="l0A-aa-q99" kind="relationship" relationship="viewControllers" id="go6-h3-agk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdd-Oj-g1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2946.376811594203" y="69.642857142857139"/>
         </scene>
-        <!--Cart-->
+        <!--Food CartTV-->
         <scene sceneID="tpr-YV-lwG">
             <objects>
                 <tableViewController id="zvJ-Tq-17b" customClass="FoodCartTV" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -975,6 +975,9 @@ c2V0IGl0A
                                     <state key="normal" title="CHECKOUT                            Subtotal 700$">
                                         <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="checkout:" destination="zvJ-Tq-17b" eventType="touchUpInside" id="ZAJ-l4-aTw"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -988,19 +991,19 @@ c2V0IGl0A
                             <outlet property="delegate" destination="zvJ-Tq-17b" id="w9Z-hf-6Gx"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="KCo-bh-vDZ"/>
+                    <navigationItem key="navigationItem" id="Thl-RW-QOv"/>
                     <connections>
                         <outlet property="footerView" destination="kad-KN-DCb" id="OTY-Tt-kGI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBR-dR-1aH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3821.739130434783" y="408.48214285714283"/>
+            <point key="canvasLocation" x="4731.884057971015" y="408.48214285714283"/>
         </scene>
         <!--CheckoutVC-->
         <scene sceneID="SNs-Sc-8Cb">
             <objects>
-                <viewController id="Rtr-sM-mFR" customClass="CheckoutVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="checkout" id="Rtr-sM-mFR" customClass="CheckoutVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Awc-XU-e1d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1168,7 +1171,7 @@ c2V0IGl0A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="630-Dx-s0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693" y="400"/>
+            <point key="canvasLocation" x="5602.898550724638" y="399.77678571428572"/>
         </scene>
         <!--DeliveryTVC-->
         <scene sceneID="L04-IW-jaB">
@@ -1186,7 +1189,7 @@ c2V0IGl0A
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtD-DY-XiJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5613" y="267"/>
+            <point key="canvasLocation" x="6521.739130434783" y="266.51785714285711"/>
         </scene>
         <!--AdressVC-->
         <scene sceneID="Qck-um-SCr">
@@ -1357,7 +1360,7 @@ c2V0IGl0A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTm-jl-KZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5612" y="908"/>
+            <point key="canvasLocation" x="6521.739130434783" y="907.36607142857133"/>
         </scene>
         <!--PaymentVC-->
         <scene sceneID="zLS-lf-XWA">
@@ -1558,7 +1561,7 @@ c2V0IGl0A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRG-uu-4bE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6288.4057971014499" y="670.3125"/>
+            <point key="canvasLocation" x="7198.5507246376819" y="670.3125"/>
         </scene>
         <!--Home-->
         <scene sceneID="KKI-d5-lDA">
@@ -1582,7 +1585,7 @@ c2V0IGl0A
         <!--Branch DetailsVC-->
         <scene sceneID="Rmr-e1-U7s">
             <objects>
-                <viewController id="dz6-OY-0QB" customClass="BranchDetailsVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="restMeals" id="dz6-OY-0QB" customClass="BranchDetailsVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEX-Da-GA3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1837,6 +1840,7 @@ c2V0IGl0A
                         <viewLayoutGuide key="safeArea" id="Uq9-Ck-scP"/>
                     </view>
                     <connections>
+                        <outlet property="BGImg" destination="OH2-Pt-GaE" id="DuM-vQ-2AZ"/>
                         <outlet property="branchBGView" destination="C6i-ZR-FP6" id="Tpo-gH-Gwy"/>
                         <outlet property="branchFrontView" destination="cuQ-BT-DYs" id="plj-IT-hRA"/>
                         <outlet property="containerView" destination="obl-lG-Y0a" id="9sE-VV-sK9"/>
@@ -1876,7 +1880,7 @@ c2V0IGl0A
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4N-uX-jeb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7734" y="73"/>
+            <point key="canvasLocation" x="7732" y="41"/>
         </scene>
         <!--Branch MealsCVC-->
         <scene sceneID="na0-II-bDB">
@@ -2313,6 +2317,25 @@ c2V0IGl0A
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpJ-dN-H2z" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8631.8840579710159" y="-324.10714285714283"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="q3m-l3-sb0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l0A-aa-q99" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="KCo-bh-vDZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YXS-jm-6Bl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zvJ-Tq-17b" kind="relationship" relationship="rootViewController" id="5Sn-pI-Een"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpi-Zv-wGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3821.739130434783" y="408.48214285714283"/>
         </scene>
     </scenes>
     <resources>

@@ -37,4 +37,9 @@ extension BrandDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource, 
             return CGSize(width: (viewWidth * 0.5) - 10, height: 237.50000000000003)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let meals = self.storyboard?.instantiateViewController(withIdentifier: "restMeals") as? BranchDetailsVC
+        navigationController?.pushViewController(meals!, animated: true)
+    }
 }
