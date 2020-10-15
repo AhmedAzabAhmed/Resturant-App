@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0o0-B2-WP4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -137,11 +137,14 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D31-3a-cWw">
                                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKK-e5-BmZ">
+                                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKK-e5-BmZ">
                                                                                 <rect key="frame" x="5" y="22.5" width="389" height="30"/>
                                                                                 <state key="normal" title="Forgot Password?">
                                                                                     <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 </state>
+                                                                                <connections>
+                                                                                    <action selector="goToHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grw-8J-xwn"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,12 +167,15 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kY8-q0-3DC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="62.5"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chq-88-a2h">
+                                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chq-88-a2h">
                                                                         <rect key="frame" x="55.5" y="3.5" width="303" height="55.5"/>
                                                                         <color key="backgroundColor" red="0.99215686274509807" green="0.24705882352941178" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="Login">
                                                                             <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="goToHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObG-Xi-dlT"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,12 +189,15 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-bs-elA">
                                                                 <rect key="frame" x="0.0" y="162.5" width="414" height="62.5"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pag-2g-sIx">
+                                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pag-2g-sIx">
                                                                         <rect key="frame" x="55.5" y="32.5" width="303" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Create New Account">
                                                                             <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="goToHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDa-hE-wfS"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,12 +259,12 @@
         <!--SignupVC-->
         <scene sceneID="t8I-u5-H9g">
             <objects>
-                <viewController id="OKS-L6-avf" customClass="SignupVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signup" id="OKS-L6-avf" customClass="SignupVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="KgR-B7-bAc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signupBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-RG-W54">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="signup" image="signupBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-RG-W54">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOl-El-27z">
@@ -268,7 +277,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clientPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-oB-R2l">
-                                                        <rect key="frame" x="55" y="0.0" width="304" height="138"/>
+                                                        <rect key="frame" x="131" y="0.0" width="152" height="138"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -598,7 +607,7 @@
         <!--Forget PasswordVC-->
         <scene sceneID="WoH-3J-ahD">
             <objects>
-                <viewController id="Y9K-xf-NpR" customClass="ForgetPasswordVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reset" id="Y9K-xf-NpR" customClass="ForgetPasswordVC" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Ww0-Un-yk7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,7 +698,7 @@ c2V0IGl0A
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt6-5r-CYE">
-                                                                        <rect key="frame" x="55.5" y="3.5" width="303" height="43"/>
+                                                                        <rect key="frame" x="55.5" y="0.0" width="303" height="50"/>
                                                                         <color key="backgroundColor" red="0.99215686270000003" green="0.2470588235" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="Send">
                                                                             <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -698,9 +707,9 @@ c2V0IGl0A
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstItem="pt6-5r-CYE" firstAttribute="top" secondItem="Odx-cQ-egm" secondAttribute="top" constant="3.5" id="1LY-K2-bFG"/>
+                                                                    <constraint firstItem="pt6-5r-CYE" firstAttribute="top" secondItem="Odx-cQ-egm" secondAttribute="top" id="1LY-K2-bFG"/>
                                                                     <constraint firstAttribute="trailing" secondItem="pt6-5r-CYE" secondAttribute="trailing" constant="55.5" id="4x8-tN-JMK"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="pt6-5r-CYE" secondAttribute="bottom" constant="3.5" id="VIh-sz-fRf"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="pt6-5r-CYE" secondAttribute="bottom" id="VIh-sz-fRf"/>
                                                                     <constraint firstItem="pt6-5r-CYE" firstAttribute="leading" secondItem="Odx-cQ-egm" secondAttribute="leading" constant="55.5" id="ZP9-Yq-GtU"/>
                                                                 </constraints>
                                                             </view>
@@ -742,7 +751,9 @@ c2V0IGl0A
                         <viewLayoutGuide key="safeArea" id="hZT-S7-n2e"/>
                     </view>
                     <connections>
+                        <outlet property="forgetPassField" destination="gcc-Od-NKv" id="Q4S-o0-N0F"/>
                         <outlet property="forgetPassView" destination="bhO-Wd-vv6" id="FWS-ea-eLU"/>
+                        <outlet property="sendBtn" destination="pt6-5r-CYE" id="u9l-F3-b3v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15g-u6-XCD" sceneMemberID="firstResponder"/>
@@ -752,7 +763,7 @@ c2V0IGl0A
         <!--Home-->
         <scene sceneID="Ef9-0i-b2K">
             <objects>
-                <collectionViewController id="Sq8-zs-4IN" customClass="HomeCollectionViewController" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="home" id="Sq8-zs-4IN" customClass="HomeCollectionViewController" customModule="Restaurant_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="47d-z2-8wz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

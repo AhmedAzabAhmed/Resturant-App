@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
     
-//    @IBOutlet weak var loginScrollView: UIScrollView!
+    //    @IBOutlet weak var loginScrollView: UIScrollView!
     
     
     override func viewDidLoad() {
@@ -33,18 +33,18 @@ class ViewController: UIViewController {
         //        testLabel.font = UIFont.init(name: FontFamilyPalmSoft.regular, size: FontSize.medium)
         //        view.backgroundColor = Colors.primary
         
-//         bgView.backgroundColor = UIColor(patternImage: UIImage(named: "loginBG.png")!)
+        //         bgView.backgroundColor = UIColor(patternImage: UIImage(named: "loginBG.png")!)
         
-//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginBG.png")!)
-//        addGradientColor()
+        //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginBG.png")!)
+        //        addGradientColor()
         
-//        self.loginScrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height + 2000)
-
+        //        self.loginScrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height + 2000)
+        
         makePlaceHolder(text: "Email", textFeild: emailField)
         makePlaceHolder(text: "Password", textFeild: passwordField)
         
         loginBtn.layer.cornerRadius = 10
-
+        
         roundViewWithborder(myView: emailView, conerRaduis: 20)
         
         roundViewWithborder(myView: passwordView, conerRaduis: 20)
@@ -57,14 +57,32 @@ class ViewController: UIViewController {
     
     @IBAction func goToHome(_ sender: Any) {
         
-        let signup = self.storyboard?.instantiateViewController(withIdentifier: "signup") as? SignupVC
-        navigationController?.pushViewController(signup!, animated: true)
+        guard let button = sender as? UIButton else {
+            return
+        }
+        switch button.tag {
+        case 8:
+            let home = self.storyboard?.instantiateViewController(withIdentifier: "home") as? HomeCollectionViewController
+            self.present(home!, animated: true, completion: nil)
+            break
+        case 9:
+            let reset = self.storyboard?.instantiateViewController(withIdentifier: "reset") as? ForgetPasswordVC
+            self.present(reset!, animated: true, completion: nil)
+            break
+        case 10:
+            let signup = self.storyboard?.instantiateViewController(withIdentifier: "signup") as? SignupVC
+            self.present(signup!, animated: true, completion: nil)
+            break
+            
+        default: break
+            
+        }
     }
     
     func makePlaceHolder(text: String, textFeild: UITextField ) {
         
         textFeild.attributedPlaceholder = NSAttributedString(string: text,
-        attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+                                                             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
     
     func roundViewWithborder(myView: UIView, conerRaduis: CGFloat) {
@@ -74,16 +92,16 @@ class ViewController: UIViewController {
         
         myView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
         
-//        myView.frame = CGRect(x: 0, y: myView.frame.size.height - myView.layer.borderWidth,width: myView.frame.size.width, height: myView.layer.borderWidth)
+        //        myView.frame = CGRect(x: 0, y: myView.frame.size.height - myView.layer.borderWidth,width: myView.frame.size.width, height: myView.layer.borderWidth)
     }
     
-//    func addGradientColor() {
-//
-//        let gradient = CAGradientLayer()
-//        gradient.frame = bgView.bounds
-//        gradient.colors = [UIColor(red:45/255, green:45/255, blue:45/255, alpha: 0.5).cgColor, UIColor(red:8/255, green:8/255, blue:8/255, alpha: 0.75).cgColor, UIColor(red:0/255, green:0/255, blue:0/255, alpha: 1.0).cgColor]
-//
-//        bgView.layer.insertSublayer(gradient, at: 0)
-//    }
+    //    func addGradientColor() {
+    //
+    //        let gradient = CAGradientLayer()
+    //        gradient.frame = bgView.bounds
+    //        gradient.colors = [UIColor(red:45/255, green:45/255, blue:45/255, alpha: 0.5).cgColor, UIColor(red:8/255, green:8/255, blue:8/255, alpha: 0.75).cgColor, UIColor(red:0/255, green:0/255, blue:0/255, alpha: 1.0).cgColor]
+    //
+    //        bgView.layer.insertSublayer(gradient, at: 0)
+    //    }
 }
 

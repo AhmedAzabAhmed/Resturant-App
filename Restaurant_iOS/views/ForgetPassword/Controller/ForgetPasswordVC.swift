@@ -10,13 +10,14 @@ import UIKit
 
 class ForgetPasswordVC: UIViewController {
     
+    @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var forgetPassView: UIView!
     @IBOutlet weak var forgetPassField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
+        sendBtn.layer.cornerRadius = 10
         makePlaceHolder(text: "Email", textFeild: forgetPassField)
         
         roundViewWithborder(myView: forgetPassView, conerRaduis: 20)
