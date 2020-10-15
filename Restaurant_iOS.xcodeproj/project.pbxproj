@@ -29,13 +29,13 @@
 		A333212125195E6800414543 /* BrandDetailsVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A333212025195E6800414543 /* BrandDetailsVCExtension.swift */; };
 		A33321252519605C00414543 /* BrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33321232519605C00414543 /* BrandCollectionViewCell.swift */; };
 		A33321262519605C00414543 /* BrandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33321242519605C00414543 /* BrandCollectionViewCell.xib */; };
+		A33CCEEE25387C10002D1C57 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */; };
 		A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BA6212513BC45009F67A5 /* ForgetPasswordVC.swift */; };
 		A35FA4652519076400D6A8D2 /* PizzaHut.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A35FA4642519076300D6A8D2 /* PizzaHut.jpeg */; };
 		A36623212512A0E400A22C4F /* signupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623202512A0E400A22C4F /* signupBG.png */; };
 		A36623252512A52900A22C4F /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36623242512A52900A22C4F /* SignupVC.swift */; };
 		A36623272512A83900A22C4F /* clientPic.png in Resources */ = {isa = PBXBuildFile; fileRef = A36623262512A83900A22C4F /* clientPic.png */; };
 		A36A9E9E2537A99C0029A46B /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9D2537A99C0029A46B /* PaymentVC.swift */; };
-		A36A9EA02537B95A0029A46B /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A9E9F2537B95A0029A46B /* CheckoutVC.swift */; };
 		A370676A2534DC0F009A5823 /* FoodCartTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067692534DC0F009A5823 /* FoodCartTV.swift */; };
 		A37067742534DD2F009A5823 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37067722534DD2F009A5823 /* CartTVCell.swift */; };
 		A37067752534DD2F009A5823 /* CartTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37067732534DD2F009A5823 /* CartTVCell.xib */; };
@@ -807,7 +807,7 @@
 				A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */,
 				4E1587A124E0979300D29F40 /* Utilities.swift in Sources */,
 				A3FB013B2537521E00DD13C5 /* DeliveryTVC.swift in Sources */,
-				A36A9EA02537B95A0029A46B /* CheckoutVC.swift in Sources */,
+				A33CCEEE25387C10002D1C57 /* CheckoutVC.swift in Sources */,
 				A333212125195E6800414543 /* BrandDetailsVCExtension.swift in Sources */,
 				A3734DAE252CC1730011B3EA /* MealDetailsVC.swift in Sources */,
 				A3FB013F25375A1000DD13C5 /* DeliveryCell.swift in Sources */,
