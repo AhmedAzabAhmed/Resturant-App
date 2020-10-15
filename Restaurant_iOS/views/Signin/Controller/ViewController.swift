@@ -62,8 +62,12 @@ class ViewController: UIViewController {
         }
         switch button.tag {
         case 8:
-            let home = self.storyboard?.instantiateViewController(withIdentifier: "home") as? HomeCollectionViewController
-            self.present(home!, animated: true, completion: nil)
+            
+            if let tabbar = (storyboard!.instantiateViewController(withIdentifier: "tabbar") as?
+                UITabBarController) {
+                tabbar.modalPresentationStyle = .fullScreen
+                self.present(tabbar, animated: true, completion: nil)
+            }
             break
         case 9:
             let reset = self.storyboard?.instantiateViewController(withIdentifier: "reset") as? ForgetPasswordVC
