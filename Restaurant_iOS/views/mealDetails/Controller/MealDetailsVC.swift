@@ -29,6 +29,8 @@ class MealDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Meal Deatils"
+        
         // Do any additional setup after loading the view.
     }
     

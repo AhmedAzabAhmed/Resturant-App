@@ -28,6 +28,8 @@ class BranchDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Meals"
+        
         BGImg.clipsToBounds = true
         BGImg.layer.cornerRadius = 20
         BGImg.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]

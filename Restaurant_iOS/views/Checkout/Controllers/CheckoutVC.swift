@@ -85,6 +85,17 @@ class CheckoutVC: UIViewController {
             }, completion: nil)
             
             break
+        case 18:
+             self.showToast(message: "Request Done", font: .systemFont(ofSize: 15.0))
+//             self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+             
+             if let tabbar = (storyboard!.instantiateViewController(withIdentifier: "tabbar") as?
+                 UITabBarController) {
+                 tabbar.modalPresentationStyle = .fullScreen
+                 self.present(tabbar, animated: true, completion: nil)
+             }
+
+            break
         default: break
             
         }
@@ -93,6 +104,7 @@ class CheckoutVC: UIViewController {
     func buildDelivery() {
         
         saveAddView.isHidden = true
+        navigationItem.title = "Checkout"
         
         UIView.transition(with: self.checkoutContainerView, duration: 1.0, options: .transitionFlipFromRight, animations: {
             
@@ -108,7 +120,7 @@ class CheckoutVC: UIViewController {
     }
     
     func buildAddress() {
-        
+        navigationItem.title = "Address"
         saveAddView.isHidden = false
         
         UIView.transition(with: self.checkoutContainerView, duration: 1.0, options: .transitionFlipFromRight, animations: {
@@ -125,7 +137,7 @@ class CheckoutVC: UIViewController {
     }
     
     func buildPayment() {
-        
+        navigationItem.title = "Payment"
         saveAddView.isHidden = false
         
         UIView.transition(with: self.checkoutContainerView, duration: 1.0, options: .transitionFlipFromRight, animations: {

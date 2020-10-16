@@ -17,7 +17,7 @@ extension BrandDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let pizzaLocations: [String] = ["Cairo", "Nasr City", "6 October", "Alexandria"]
+        let pizzaLocations: [String] = ["Nasr City", "Maadi", "Dokki", "6 October"]
         let arrHotline: [String] = ["19850", "12457", "85416", "12048"]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandCell", for: indexPath) as! BrandCollectionViewCell

@@ -27,6 +27,7 @@ class BrandDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Branches"
         
         loginImg.clipsToBounds = true
         loginImg.layer.cornerRadius = 20

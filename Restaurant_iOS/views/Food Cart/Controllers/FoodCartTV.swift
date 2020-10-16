@@ -15,6 +15,8 @@ class FoodCartTV: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "Your Food Cart"
+        
         addViewGradientColor()
 //        addGradientColor()
         tableView.register(UINib(nibName: "CartTVCell", bundle: nil), forCellReuseIdentifier: "cartCell")
