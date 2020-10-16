@@ -10,6 +10,9 @@ import UIKit
 
 class DeliveryTVC: UITableViewController {
 
+    let titleArr:[String] = ["Standard Delivery", "Next Day Delivery", "Saturday Delivery"]
+    let orderCostArr:[String] = [" ", "$8.00", "$20.00"]
+    let orderDetailsArr:[String] = ["Order will be delivered between 3 - 5 business days", "Order will be delivered between 1 Week business days", "Order will be delivered between 1 Week business days"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,14 +35,16 @@ class DeliveryTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return titleArr.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "deliveryCell", for: indexPath) as! DeliveryCell
 
         // Configure the cell...
-
+        cell.titleLbl.text = titleArr[indexPath.row]
+        cell.costLbl.text = orderCostArr[indexPath.row]
+        cell.orderDetailsLbl.text = orderDetailsArr[indexPath.row]
         return cell
     }
     

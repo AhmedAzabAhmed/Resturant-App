@@ -20,6 +20,7 @@ class CheckoutVC: UIViewController {
     @IBOutlet weak var paymentBtn: UIButton!
     
     @IBOutlet weak var saveAddView: UIStackView!
+    @IBOutlet weak var saveLbl: UILabel!
     
     var delivery: DeliveryTVC?
     var address: AdressVC?
@@ -65,7 +66,8 @@ class CheckoutVC: UIViewController {
         case 6:
             buildAddress()
             
-            
+            saveLbl.text = "Save new address"
+
             UIView.transition(with: sender as! UIView, duration: 1.0, options: .transitionFlipFromRight, animations: {
                 self.deliveryBtn.setImage(UIImage(named: "Delivery"), for: .normal)
                 self.addressBtn.setImage(UIImage(named: "checkedAddress"), for: .normal)
@@ -75,7 +77,7 @@ class CheckoutVC: UIViewController {
             break
         case 7:
             buildPayment()
-            
+            saveLbl.text = "Save new card"
             UIView.transition(with: sender as! UIView, duration: 1.0, options: .transitionFlipFromRight, animations: {
                 self.deliveryBtn.setImage(UIImage(named: "Delivery"), for: .normal)
                 self.addressBtn.setImage(UIImage(named: "Address"), for: .normal)

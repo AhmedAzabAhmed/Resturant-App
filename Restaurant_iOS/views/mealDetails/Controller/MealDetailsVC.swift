@@ -23,6 +23,8 @@ class MealDetailsVC: UIViewController {
     @IBOutlet weak var up7Btn: UIButton!
     @IBOutlet weak var up7Diet: UIButton!
     
+    @IBOutlet weak var twisterBtn: UIButton!
+    @IBOutlet weak var drinkBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +41,10 @@ class MealDetailsVC: UIViewController {
         case 3:
             if twisterHeightConstraint.constant >= 82.5 {
                 twisterHeightConstraint.constant = 0
-                
+                twisterBtn.setImage(UIImage(named: "upArrow"), for: .normal)
             } else {
                 twisterHeightConstraint.constant = 82.5
+                twisterBtn.setImage(UIImage(named: "downArrow"), for: .normal)
             }
             UIView.animate(withDuration: 0.5) {
                 self.view.layoutIfNeeded()
@@ -51,9 +54,10 @@ class MealDetailsVC: UIViewController {
         case 4:
             if softDrinkHeightConstraint.constant >= 182 {
                 softDrinkHeightConstraint.constant = 0
-                
+                drinkBtn.setImage(UIImage(named: "upArrow"), for: .normal)
             } else {
                 softDrinkHeightConstraint.constant = 182
+                drinkBtn.setImage(UIImage(named: "downArrow"), for: .normal)
             }
             UIView.animate(withDuration: 0.5) {
                 self.view.layoutIfNeeded()
@@ -94,6 +98,10 @@ class MealDetailsVC: UIViewController {
                 mirindaBtn.setImage(UIImage(named: "RadioButton"), for: .normal)
                 up7Btn.setImage(UIImage(named: "RadioButton"), for: .normal)
                 up7Diet.setImage(UIImage(named: "checkedRadioButton"), for: .normal)
+            break
+        case 17:
+            self.showToast(message: "Successfully Added !!", font: .systemFont(ofSize: 12.0))
+
             break
         default:
             print("Not available")

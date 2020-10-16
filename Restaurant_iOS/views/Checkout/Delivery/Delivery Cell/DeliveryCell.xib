@@ -22,12 +22,33 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y0N-bz-jQf">
                                 <rect key="frame" x="16" y="16" width="319" height="81"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-bL-qR0">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wBI-3i-aaZ">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="25"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-Gq-LE4">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="25"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-bL-qR0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="25"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="jho-7m-osD">
+                                                <rect key="frame" x="159.5" y="0.0" width="159.5" height="25"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plu-h6-kbe">
+                                                        <rect key="frame" x="109.5" y="0.0" width="50" height="25"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zME-0P-ebN">
                                         <rect key="frame" x="0.0" y="40" width="319" height="41"/>
                                         <subviews>
@@ -50,7 +71,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-NC-9s6">
                                                                 <rect key="frame" x="27.5" y="0.0" width="24" height="24"/>
-                                                                <state key="normal" image="checkedRadioButton"/>
+                                                                <state key="normal" image="RadioButton"/>
+                                                                <connections>
+                                                                    <action selector="check:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="d4N-pT-ahj"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -84,12 +108,16 @@
             <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803926" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="costLbl" destination="Plu-h6-kbe" id="9Bc-dt-nzh"/>
                 <outlet property="deliveryCellView" destination="rOe-EL-aT0" id="Qfp-wt-mPc"/>
+                <outlet property="orderDetailsLbl" destination="pJc-ZV-1EP" id="8j0-jr-4Hx"/>
+                <outlet property="radioBtn" destination="KD2-NC-9s6" id="otj-Nu-Ilh"/>
+                <outlet property="titleLbl" destination="VOO-bL-qR0" id="i9U-9m-ohg"/>
             </connections>
-            <point key="canvasLocation" x="183.33333333333334" y="170.08928571428569"/>
+            <point key="canvasLocation" x="183.33333333333334" y="169.41964285714286"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="checkedRadioButton" width="24" height="24"/>
+        <image name="RadioButton" width="24" height="24"/>
     </resources>
 </document>

@@ -56,6 +56,7 @@
 		A3BA5C562516A260005B9D81 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA5C542516A260005B9D81 /* HomeCollectionViewCell.swift */; };
 		A3BA5C572516A260005B9D81 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BA5C552516A260005B9D81 /* HomeCollectionViewCell.xib */; };
 		A3BFDC0024FFCA9B00C96E40 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BFDBFF24FFCA9B00C96E40 /* GradientView.swift */; };
+		A3DB58B82539F2C4000CD94D /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB58B72539F2C4000CD94D /* extension.swift */; };
 		A3F7F914252A093A004D387F /* BranchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F913252A093A004D387F /* BranchDetailsVC.swift */; };
 		A3F7F918252A8A89004D387F /* BranchMealsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F917252A8A89004D387F /* BranchMealsCVC.swift */; };
 		A3F7F91A252A8AC5004D387F /* BranchRatingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F919252A8AC5004D387F /* BranchRatingTVC.swift */; };
@@ -138,6 +139,7 @@
 		A3BA5C542516A260005B9D81 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3BA5C552516A260005B9D81 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3BFDBFF24FFCA9B00C96E40 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A3DB58B72539F2C4000CD94D /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		A3F7F913252A093A004D387F /* BranchDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchDetailsVC.swift; sourceTree = "<group>"; };
 		A3F7F917252A8A89004D387F /* BranchMealsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchMealsCVC.swift; sourceTree = "<group>"; };
 		A3F7F919252A8AC5004D387F /* BranchRatingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchRatingTVC.swift; sourceTree = "<group>"; };
@@ -237,7 +239,6 @@
 				A3BFDBFE24FFCA7C00C96E40 /* GradientView */,
 				A395D1B424FD403000706C11 /* images */,
 				4E15879F24E0975300D29F40 /* Attributes */,
-				4E2135E824D897F3009390C0 /* POJOs */,
 				4E2135E124D896D5009390C0 /* extras */,
 				4E2135DC24D8956A009390C0 /* model */,
 				4E2135DB24D89530009390C0 /* presenter */,
@@ -361,6 +362,7 @@
 		4E2135E124D896D5009390C0 /* extras */ = {
 			isa = PBXGroup;
 			children = (
+				4E2135E824D897F3009390C0 /* POJOs */,
 				4E2135E224D897A3009390C0 /* language */,
 			);
 			path = extras;
@@ -379,7 +381,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = POJOs;
+			name = POJOs;
+			path = ../POJOs;
 			sourceTree = "<group>";
 		};
 		A33321222519602100414543 /* BrandCell */ = {
@@ -436,6 +439,7 @@
 		A3734DAB252CC1290011B3EA /* mealDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB58B62539F282000CD94D /* Extension */,
 				A3734DAC252CC13F0011B3EA /* Controller */,
 			);
 			path = mealDetails;
@@ -493,6 +497,14 @@
 				A370677625351EA1009A5823 /* Gradient.swift */,
 			);
 			path = GradientView;
+			sourceTree = "<group>";
+		};
+		A3DB58B62539F282000CD94D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB58B72539F2C4000CD94D /* extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A3F7F908252A0283004D387F /* Signin */ = {
@@ -843,6 +855,7 @@
 				A35BA6222513BC45009F67A5 /* ForgetPasswordVC.swift in Sources */,
 				4E1587A124E0979300D29F40 /* Utilities.swift in Sources */,
 				A3FB013B2537521E00DD13C5 /* DeliveryTVC.swift in Sources */,
+				A3DB58B82539F2C4000CD94D /* extension.swift in Sources */,
 				A33CCEEE25387C10002D1C57 /* CheckoutVC.swift in Sources */,
 				A333212125195E6800414543 /* BrandDetailsVCExtension.swift in Sources */,
 				A3734DAE252CC1730011B3EA /* MealDetailsVC.swift in Sources */,
