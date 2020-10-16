@@ -1571,6 +1571,7 @@ c2V0IGl0A
                         <viewLayoutGuide key="safeArea" id="kmT-lj-U1K"/>
                     </view>
                     <connections>
+                        <outlet property="epireDateField" destination="Vq5-wl-1cC" id="SQa-4O-HnD"/>
                         <outlet property="paymentView" destination="ngr-7O-pZd" id="ada-BS-UhY"/>
                     </connections>
                 </viewController>
