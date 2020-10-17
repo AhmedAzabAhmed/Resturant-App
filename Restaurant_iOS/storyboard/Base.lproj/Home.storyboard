@@ -55,17 +55,17 @@
                                                                                         <rect key="frame" x="11" y="5" width="363" height="40"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XuN-xM-pEy">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="40"/>
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="40"/>
                                                                                             </imageView>
                                                                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-u0-EMb">
-                                                                                                <rect key="frame" x="48" y="0.0" width="315" height="40"/>
+                                                                                                <rect key="frame" x="37" y="0.0" width="326" height="40"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                             </textField>
                                                                                         </subviews>
                                                                                         <constraints>
-                                                                                            <constraint firstItem="BJc-u0-EMb" firstAttribute="width" secondItem="XuN-xM-pEy" secondAttribute="width" multiplier="7.5:1" id="9Ig-2q-enL"/>
+                                                                                            <constraint firstItem="BJc-u0-EMb" firstAttribute="width" secondItem="XuN-xM-pEy" secondAttribute="width" multiplier="10.5:1" id="9Ig-2q-enL"/>
                                                                                         </constraints>
                                                                                     </stackView>
                                                                                 </subviews>
@@ -93,21 +93,21 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9F-5r-sIg">
                                                                                 <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                                                                                 <subviews>
-                                                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfT-DA-ZK5">
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GfT-DA-ZK5">
                                                                                         <rect key="frame" x="8" y="7" width="366" height="36"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-uG-hHF">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="36"/>
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="36"/>
                                                                                             </imageView>
                                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QU-Jx-HHc">
-                                                                                                <rect key="frame" x="52.5" y="0.0" width="313.5" height="36"/>
+                                                                                                <rect key="frame" x="37.5" y="0.0" width="328.5" height="36"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                                             </textField>
                                                                                         </subviews>
                                                                                         <constraints>
-                                                                                            <constraint firstItem="7QU-Jx-HHc" firstAttribute="width" secondItem="Pnl-uG-hHF" secondAttribute="width" multiplier="6:1" id="RKu-dj-ehA"/>
+                                                                                            <constraint firstItem="7QU-Jx-HHc" firstAttribute="width" secondItem="Pnl-uG-hHF" secondAttribute="width" multiplier="10.5:1" id="RKu-dj-ehA"/>
                                                                                         </constraints>
                                                                                     </stackView>
                                                                                 </subviews>
@@ -277,7 +277,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clientPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-oB-R2l">
-                                                        <rect key="frame" x="55" y="0.0" width="304" height="138"/>
+                                                        <rect key="frame" x="131" y="0.0" width="152" height="138"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -293,21 +293,21 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YID-qs-03G">
                                                                         <rect key="frame" x="20" y="0.0" width="374" height="50"/>
                                                                         <subviews>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-aM-a3t">
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-aM-a3t">
                                                                                 <rect key="frame" x="8" y="8" width="358" height="34"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nameIcon" translatesAutoresizingMaskIntoConstraints="NO" id="KbI-6I-T6e">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="34"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5j-dF-MFt">
-                                                                                        <rect key="frame" x="51" y="0.0" width="307" height="34"/>
+                                                                                        <rect key="frame" x="37" y="0.0" width="321" height="34"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="s5j-dF-MFt" firstAttribute="width" secondItem="KbI-6I-T6e" secondAttribute="width" multiplier="6:1" id="4QA-iY-9IK"/>
+                                                                                    <constraint firstItem="s5j-dF-MFt" firstAttribute="width" secondItem="KbI-6I-T6e" secondAttribute="width" multiplier="10:1" id="4QA-iY-9IK"/>
                                                                                 </constraints>
                                                                             </stackView>
                                                                         </subviews>
@@ -339,17 +339,17 @@
                                                                                 <rect key="frame" x="12" y="8" width="354" height="34"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-e0-jhq">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="34"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="34"/>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APl-3t-L4P">
-                                                                                        <rect key="frame" x="44.5" y="0.0" width="309.5" height="34"/>
+                                                                                        <rect key="frame" x="36.5" y="0.0" width="317.5" height="34"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="APl-3t-L4P" firstAttribute="width" secondItem="dhG-e0-jhq" secondAttribute="width" multiplier="8:1" id="hr3-PH-OB3"/>
+                                                                                    <constraint firstItem="APl-3t-L4P" firstAttribute="width" secondItem="dhG-e0-jhq" secondAttribute="width" multiplier="10.5:1" id="hr3-PH-OB3"/>
                                                                                 </constraints>
                                                                             </stackView>
                                                                         </subviews>
@@ -377,21 +377,21 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJN-Zo-pYp">
                                                                         <rect key="frame" x="20" y="0.0" width="374" height="50"/>
                                                                         <subviews>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw8-z2-TVW">
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sw8-z2-TVW">
                                                                                 <rect key="frame" x="8" y="8" width="358" height="34"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="XHE-9c-RCF">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="34"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-ch-bDX">
-                                                                                        <rect key="frame" x="51" y="0.0" width="307" height="34"/>
+                                                                                        <rect key="frame" x="37" y="0.0" width="321" height="34"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="5bd-ch-bDX" firstAttribute="width" secondItem="XHE-9c-RCF" secondAttribute="width" multiplier="6:1" id="wqo-Uj-gZZ"/>
+                                                                                    <constraint firstItem="5bd-ch-bDX" firstAttribute="width" secondItem="XHE-9c-RCF" secondAttribute="width" multiplier="10:1" id="wqo-Uj-gZZ"/>
                                                                                 </constraints>
                                                                             </stackView>
                                                                         </subviews>
@@ -419,21 +419,21 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eY2-yB-jFr">
                                                                         <rect key="frame" x="20" y="0.0" width="374" height="50"/>
                                                                         <subviews>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irX-nX-0jx">
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="irX-nX-0jx">
                                                                                 <rect key="frame" x="8" y="8" width="358" height="34"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="bd3-Ni-Owr">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="34"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25r-81-jFA">
-                                                                                        <rect key="frame" x="51" y="0.0" width="307" height="34"/>
+                                                                                        <rect key="frame" x="37" y="0.0" width="321" height="34"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="25r-81-jFA" firstAttribute="width" secondItem="bd3-Ni-Owr" secondAttribute="width" multiplier="6:1" id="eWK-C2-GcZ"/>
+                                                                                    <constraint firstItem="25r-81-jFA" firstAttribute="width" secondItem="bd3-Ni-Owr" secondAttribute="width" multiplier="10:1" id="eWK-C2-GcZ"/>
                                                                                 </constraints>
                                                                             </stackView>
                                                                         </subviews>
@@ -461,21 +461,21 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-5r-lqC">
                                                                         <rect key="frame" x="20" y="0.0" width="374" height="50"/>
                                                                         <subviews>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vql-ZJ-pYf">
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="vql-ZJ-pYf">
                                                                                 <rect key="frame" x="8" y="8" width="358" height="34"/>
                                                                                 <subviews>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-bB-Yhl">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="34"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k0M-qM-QUr">
-                                                                                        <rect key="frame" x="51" y="0.0" width="307" height="34"/>
+                                                                                        <rect key="frame" x="37" y="0.0" width="321" height="34"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="k0M-qM-QUr" firstAttribute="width" secondItem="Tzh-bB-Yhl" secondAttribute="width" multiplier="6:1" id="ZLy-g6-U25"/>
+                                                                                    <constraint firstItem="k0M-qM-QUr" firstAttribute="width" secondItem="Tzh-bB-Yhl" secondAttribute="width" multiplier="9.5:1" id="ZLy-g6-U25"/>
                                                                                 </constraints>
                                                                             </stackView>
                                                                         </subviews>
