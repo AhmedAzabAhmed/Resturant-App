@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BranchDetailsVC: UIViewController {
+class BranchDetailsVC: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var branchScrollView: UIScrollView!
     
     @IBOutlet weak var branchBGView: UIView!
     @IBOutlet weak var branchFrontView: UIView!
@@ -28,6 +30,8 @@ class BranchDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        branchScrollView.delegate = self
+        
         navigationItem.title = "Meals"
         
         BGImg.clipsToBounds = true
@@ -46,6 +50,22 @@ class BranchDetailsVC: UIViewController {
         addViewGradientColor()
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            
+              UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.navigationController?.setToolbarHidden(true, animated: true)
+              }, completion: nil)
+            
+            
+        } else {
+            UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+              self.navigationController?.setNavigationBarHidden(false, animated: true)
+              self.navigationController?.setToolbarHidden(false, animated: true)
+            }, completion: nil)
+        }
+    }
     override func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         
         addViewGradientColor()

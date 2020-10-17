@@ -8,8 +8,9 @@
 
 import UIKit
 
-class BrandDetailsVC: UIViewController {
+class BrandDetailsVC: UIViewController, UIScrollViewDelegate {
     
+    @IBOutlet weak var brandScrollView: UIScrollView!
     
     @IBOutlet weak var brandCollectionView: UICollectionView!
     
@@ -27,6 +28,8 @@ class BrandDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        brandScrollView.delegate = self
+        
         navigationItem.title = "Branches"
         
         loginImg.clipsToBounds = true
@@ -40,6 +43,7 @@ class BrandDetailsVC: UIViewController {
         brandView.layer.cornerRadius = 10
         self.brandCollectionView!.register(UINib(nibName: "BrandCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "brandCell")
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         addGradientColor()
         addViewGradientColor()
@@ -90,7 +94,20 @@ class BrandDetailsVC: UIViewController {
             reached = true
         }
         
-        
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            
+              UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.navigationController?.setToolbarHidden(true, animated: true)
+              }, completion: nil)
+            
+            
+        } else {
+            UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+              self.navigationController?.setNavigationBarHidden(false, animated: true)
+              self.navigationController?.setToolbarHidden(false, animated: true)
+            }, completion: nil)
+        }
         
 //        if (scrollView.contentOffset.y < 0){
 //            //reach top

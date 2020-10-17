@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CheckoutVC: UIViewController {
+class CheckoutVC: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var checkoutScrollView: UIScrollView!
     
     @IBOutlet weak var checkoutContainerView: UIView!
     
@@ -29,6 +31,8 @@ class CheckoutVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkoutScrollView.delegate = self
+        
         topView.clipsToBounds = true
         topView.layer.cornerRadius = 70
         topView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
@@ -44,6 +48,23 @@ class CheckoutVC: UIViewController {
         // Do any additional setup after loading the view.
         nextBtn.layer.cornerRadius = 25
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            
+              UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.navigationController?.setToolbarHidden(true, animated: true)
+              }, completion: nil)
+            
+            
+        } else {
+            UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+              self.navigationController?.setNavigationBarHidden(false, animated: true)
+              self.navigationController?.setToolbarHidden(false, animated: true)
+            }, completion: nil)
+        }
     }
     
     @IBAction func swapBetweenViews(_ sender: Any) {

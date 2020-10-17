@@ -12,11 +12,13 @@ class FoodCartTV: UITableViewController {
 
     @IBOutlet weak var footerView: UIView!
     
+    @IBOutlet weak var checkoutBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Your Food Cart"
-        
+        checkoutBtn.layer.cornerRadius = 10
         addViewGradientColor()
 //        addGradientColor()
         tableView.register(UINib(nibName: "CartTVCell", bundle: nil), forCellReuseIdentifier: "cartCell")

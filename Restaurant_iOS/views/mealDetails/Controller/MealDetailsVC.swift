@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MealDetailsVC: UIViewController {
+class MealDetailsVC: UIViewController, UIScrollViewDelegate {
     
+    @IBOutlet weak var mealScrollView: UIScrollView!
     
     @IBOutlet weak var twisterHeightConstraint: NSLayoutConstraint!
     
@@ -28,10 +29,27 @@ class MealDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mealScrollView.delegate = self
         navigationItem.title = "Meal Deatils"
         
         // Do any additional setup after loading the view.
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            
+              UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.navigationController?.setToolbarHidden(true, animated: true)
+              }, completion: nil)
+            
+            
+        } else {
+            UIView.animate(withDuration: 0.8, delay: 0, options: UIView.AnimationOptions(), animations: {
+              self.navigationController?.setNavigationBarHidden(false, animated: true)
+              self.navigationController?.setToolbarHidden(false, animated: true)
+            }, completion: nil)
+        }
     }
     
     @IBAction func showHideBtn(_ sender: Any) {
